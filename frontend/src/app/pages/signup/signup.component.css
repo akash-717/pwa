@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+:host {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(234,204,255);
+    background: linear-gradient(90deg, rgba(234,204,255,1) 0%, rgba(255,177,177,1) 50%, rgba(255,234,205,1) 100%);
+}
+
+.header-part
+{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+}
+
+.header-part h1
+{
+    font-size: 50px;
+}
+
+.header-part p
+{
+    font-size: 20px;
+}
+
+.signup-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    margin: 10px 10px;
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card-title h1 {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form-group input {
+    margin: 5px 0;
+    width: 90%;
+    background-color: #f1f0f0;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin:10px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 35%;
+}
+
+.card-terms {
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.card-terms span {
+    margin: 5px;
+    font-size: 13px;
+}
+

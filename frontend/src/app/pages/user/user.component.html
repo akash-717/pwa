@@ -1,0 +1,87 @@
+<!-- <h1>Welcome User</h1> -->
+<!-- <button (click)="logout()">Logout</button> -->
+<div class="container">
+    <header>
+        <h1>Quiz Dashboard</h1>
+        <button (click)="logout()" class="logout-button">Logout</button>
+    </header>
+    <!-- <nav>
+        <ul>
+            <li><a href="#recently-viewed">Recently Viewed</a></li>
+            <li><a href="#my-quizzes">My Quizzes</a></li>
+            <li><a href="#create-quiz">Create New Quiz</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav> -->
+    <main>
+        <section  id="recently-viewed">
+            <h2>Recently Viewed</h2>
+            <div class="quiz-list">
+                <!-- Repeat this block for each recently viewed quiz -->
+                <div onclick="window.location.href='http://localhost:45501/question'" class="quiz-card">
+                    <h3>C Programming Quiz</h3>
+                    <p>Enrolled, Not Started</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                    <div class="quiz-details">
+                        <span>10 Questions</span>
+                        <span>10 Nov, 2024 Start Date</span>
+                        <span>11 Nov, 2024 End Date</span>
+                    </div>
+                </div>
+                <!-- Repeat ends -->
+            </div>
+        </section>
+        <section id="my-quizzes">
+            <h2>My Quizzes</h2>
+            <div class=" quiz-row">
+
+                <div class="quiz-list">
+                    <!-- Repeat this block for each recently viewed quiz -->
+                    <div onclick="()=> { window.location.href = '/quiz'}" class="quiz-card">
+                    <h3>C++ Programming Quiz</h3>
+                    <p>Enrolled, Not Started</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                    <div class="quiz-details">
+                        <span>10 Questions</span>
+                        <span>12 Nov, 2024 Start Date</span>
+                        <span>15 Nov, 2024 End Date</span>
+                    </div>
+                </div>
+                <!-- Repeat ends -->
+            </div>
+            <div class="quiz-list">
+                <!-- Repeat this block for each quiz -->
+                <!-- <div class="quiz-card">
+                    <h3>Quiz Title 2</h3>
+                    <p>Validity Expired</p>
+                    <div class="progress-bar"><div class="progress" style="width: 0%;"></div></div>
+                    <div class="quiz-details">
+                        <span>20 Questions</span>
+                        <span>1 Jul, 2024 Start Date</span>
+                        <span>15 Jul, 2024 End Date</span>
+                    </div>
+                </div> -->
+                <!-- Repeat ends -->
+            </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <aside>
+        <h3>Courses & Badges</h3>
+        <ul>
+            <li>Quizzes Enrolled: 26</li>
+            <li>Quizzes Completed: 4</li>
+            <li>Badges: 972</li>
+            <li>Super Badges: 1044</li>
+        </ul>
+        <div class="chat-support">
+            <p>Questions? Chat with us!</p>
+            <button>Chat with Support</button>
+        </div>
+    </aside>
+    <!-- <footer>
+        <p>&copy; 2024 Quiz App. All rights reserved.</p>
+    </footer> -->
+</div>
